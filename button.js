@@ -1,8 +1,8 @@
-<button id= "myButton">Click me</button>
+<button id="myButton">Wyświetl datę</button>
 <p id="demo"></p>
 <script>
     document.querySelector("#myButton").onclick=displayDate;
-    function displayDate() {
+    function displayDate(){
         document.querySelector("#demo").innerHTML=Date();
     }
 </script>
