@@ -1,0 +1,11 @@
+<p> Storage- obsługa złożonych danych</p>
+<script> 
+    const user = {
+        name: "John",
+        surname: "Doe",
+        age: 30
+    };
+    localStorage.setItem("myData", JSON.stringify(user));
+    const retrieveObject = JSON.parse(localStorage.getItem("myData"));
+    console.log(retrieveObject);
+</script> 
