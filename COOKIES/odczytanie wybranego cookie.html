@@ -1,0 +1,15 @@
+<script>
+function getCookie(name) {
+    if (document.cookie !==) {
+        const cookies = document.cookie.split(/; */);
+        for (let cookie of cookies) {
+            const [cookieName, cookieValue] = cookie.split('=');
+            if (cookieName === decodeURIComponent(name)) {
+                return decodeURIComponent(cookieValue);
+            }
+        }
+    }
+    return undefined;
+}
+console.log(getCookie("user"));
+</script>
