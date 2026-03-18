@@ -1,0 +1,14 @@
+<script>
+    //create a radianl gradient
+    //the inner circle is at x=100, y=90, with radius=30
+    //the outer circle is at x=100, y=100, with radius=70
+    conts gradient = ctx.createRadialGradient(110,90,30,100,100,70);
+
+    //add three color stops
+    gradient.addColorStop(0, 'red');
+    gradient.addColorStop(0.5, 'green');
+    gradient.addColorStop(1, 'blue');
+    //set the fill style and draw a rectangle
+    ctx.fillStyle = gradient;
+    ctx.fillRect(10, 10, 200, 200);
+</script>
